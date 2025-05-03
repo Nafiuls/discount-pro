@@ -16,7 +16,7 @@ const TopBrands = () => {
       <div className="mt-10">
         <Marquee pauseOnHover speed={100}>
           {data.map((item) => (
-            <Link>
+            <Link to={`/brands/${item._id}`}>
               <div key={item._id}>
                 <img
                   className="w-[300px] h-[200px]"

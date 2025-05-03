@@ -5,6 +5,7 @@ import Brands from "../pages/Brands";
 import MyProfile from "../pages/MyProfile";
 import AboutDev from "../pages/AboutDev";
 import RegisterPage from "../pages/RegisterPage";
+import Details from "../pages/Details";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,17 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <RegisterPage />,
+      },
+      {
+        path: "/brands/:id",
+        element: <Details />,
+        loader: async ({ params }) => {
+          const res = await fetch("/data.json");
+          const data = await res.json();
+          const singleData = data.find((item) => item._id == params.id);
+          console.log(singleData);
+          return singleData;
+        },
       },
     ],
   },
