@@ -10,7 +10,7 @@ const Navbar = () => {
   ];
   return (
     <div>
-      <div className="navbar bg-[#FF8500] text-white shadow-sm">
+      <div className=" top-0 left-0 right-0 navbar px-5 bg-[#F55c22] text-white shadow-sm">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -61,7 +61,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link>
+          <Link to={"/register"}>
             <button className="bg-white px-5 py-2 rounded-sm hover:bg-transparent hover:border hover:border-white hover:text-white cursor-pointer transition-all text-black">
               Register
             </button>
