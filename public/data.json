@@ -1,0 +1,144 @@
+[
+  {
+    "_id": "1",
+    "brand_name": "Daraz",
+    "rating": 4.5,
+    "description": "Daraz is the largest online marketplace in Bangladesh offering a wide range of products at discounted prices.",
+    "brand_logo": "https://i.ibb.co/YTxYQHJ/daraz-logo.png",
+    "shop_Link": "https://www.daraz.com.bd",
+    "category": "Ecommerce",
+    "isSaleOn": true,
+    "coupons": [
+      {
+        "coupon_code": "DZ20",
+        "description": "Get 20% off on electronics",
+        "expiry_date": "2025-06-01",
+        "condition": "Minimum purchase 1000 BDT",
+        "cupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "FREESHIP",
+        "description": "Free shipping on all orders over 500 BDT",
+        "expiry_date": "2025-05-30",
+        "condition": "Valid for Daraz app only",
+        "cupon_type": "Shipping"
+      }
+    ]
+  },
+  {
+    "_id": "2",
+    "brand_name": "Foodpanda",
+    "rating": 4.2,
+    "description": "Foodpanda is your go-to online food delivery app offering fast and convenient delivery.",
+    "brand_logo": "https://i.ibb.co/px1Q8zd/foodpanda-logo.png",
+    "shop_Link": "https://www.foodpanda.com.bd",
+    "category": "Food",
+    "isSaleOn": true,
+    "coupons": [
+      {
+        "coupon_code": "FP50",
+        "description": "50% off for new users",
+        "expiry_date": "2025-07-15",
+        "condition": "Only for first-time orders",
+        "cupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "PANDA30",
+        "description": "Flat 30% off on selected restaurants",
+        "expiry_date": "2025-05-31",
+        "condition": "No minimum order value",
+        "cupon_type": "Flat"
+      }
+    ]
+  },
+  {
+    "_id": "3",
+    "brand_name": "Pickaboo",
+    "rating": 4.0,
+    "description": "Pickaboo offers top electronic gadgets, smartphones, and accessories with genuine warranty.",
+    "brand_logo": "https://i.ibb.co/hD59MYM/pickaboo-logo.png",
+    "shop_Link": "https://www.pickaboo.com",
+    "category": "Electronics",
+    "isSaleOn": false,
+    "coupons": [
+      {
+        "coupon_code": "PB100",
+        "description": "Flat 100 BDT off on mobile accessories",
+        "expiry_date": "2025-06-30",
+        "condition": "Order over 1000 BDT",
+        "cupon_type": "Flat"
+      }
+    ]
+  },
+  {
+    "_id": "4",
+    "brand_name": "Gadget & Gear",
+    "rating": 4.6,
+    "description": "Official Apple reseller in Bangladesh with authentic electronics and great deals.",
+    "brand_logo": "https://i.ibb.co/xzTX9R6/gng-logo.png",
+    "shop_Link": "https://www.gadgetandgear.com",
+    "category": "Electronics",
+    "isSaleOn": true,
+    "coupons": [
+      {
+        "coupon_code": "APPLE10",
+        "description": "10% off on all Apple accessories",
+        "expiry_date": "2025-08-01",
+        "condition": "Only accessories, not devices",
+        "cupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "GNGFREESHIP",
+        "description": "Free delivery for all prepaid orders",
+        "expiry_date": "2025-05-20",
+        "condition": "Applies to prepaid purchases only",
+        "cupon_type": "Shipping"
+      }
+    ]
+  },
+  {
+    "_id": "5",
+    "brand_name": "Othoba",
+    "rating": 3.9,
+    "description": "Othoba is an online store offering fashion, furniture, electronics, and more at competitive prices.",
+    "brand_logo": "https://i.ibb.co/Tk4g5PY/othoba-logo.png",
+    "shop_Link": "https://www.othoba.com",
+    "category": "Lifestyle",
+    "isSaleOn": false,
+    "coupons": [
+      {
+        "coupon_code": "OTHO25",
+        "description": "25% off on fashion items",
+        "expiry_date": "2025-07-01",
+        "condition": "Minimum purchase of 1200 BDT",
+        "cupon_type": "Percentage"
+      }
+    ]
+  },
+  {
+    "_id": "6",
+    "brand_name": "Chaldal",
+    "rating": 4.3,
+    "description": "Chaldal delivers fresh groceries to your doorstep with ease and speed.",
+    "brand_logo": "https://i.ibb.co/hLrYPzX/chaldal-logo.png",
+    "shop_Link": "https://www.chaldal.com",
+    "category": "Groceries",
+    "isSaleOn": true,
+    "coupons": [
+      {
+        "coupon_code": "GROC10",
+        "description": "10% off on grocery orders above 1500 BDT",
+        "expiry_date": "2025-06-20",
+        "condition": "Only for grocery category",
+        "cupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "FRESHFREE",
+        "description": "Free delivery on all fresh items",
+        "expiry_date": "2025-05-25",
+        "condition": "Applies to fresh vegetables and meat",
+        "cupon_type": "Shipping"
+      }
+    ]
+  }
+]
