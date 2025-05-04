@@ -2,7 +2,7 @@
   {
     "_id": "1",
     "brand_name": "Daraz",
-    "rating": 4.5,
+    "rating": 4,
     "description": "Daraz is the largest online marketplace in Bangladesh offering a wide range of products at discounted prices.",
     "brand_logo": "https://i.ibb.co.com/j9d5Fwjv/daraz2.png",
     "shop_Link": "https://www.daraz.com.bd/#?",
@@ -22,6 +22,34 @@
         "expiry_date": "2025-05-30",
         "condition": "Valid for Daraz app only",
         "cupon_type": "Shipping"
+      },
+      {
+        "coupon_code": "FLASH50",
+        "description": "Flat 50 BDT off on flash sale",
+        "expiry_date": "2025-06-15",
+        "condition": "Selected items only",
+        "cupon_type": "Flat"
+      },
+      {
+        "coupon_code": "SUMMER10",
+        "description": "10% off on summer essentials",
+        "expiry_date": "2025-07-01",
+        "condition": "No minimum purchase",
+        "cupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "NEWUSER",
+        "description": "Special discount for new users",
+        "expiry_date": "2025-12-31",
+        "condition": "First order only",
+        "cupon_type": "Flat"
+      },
+      {
+        "coupon_code": "DARAZAPP",
+        "description": "Extra 5% off using Daraz App",
+        "expiry_date": "2025-08-10",
+        "condition": "App orders only",
+        "cupon_type": "Percentage"
       }
     ]
   },
@@ -48,6 +76,34 @@
         "expiry_date": "2025-05-31",
         "condition": "No minimum order value",
         "cupon_type": "Flat"
+      },
+      {
+        "coupon_code": "LUNCH25",
+        "description": "25% off on lunch orders",
+        "expiry_date": "2025-06-20",
+        "condition": "11AM–2PM only",
+        "cupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "DINNERDEAL",
+        "description": "Buy 1 Get 1 free on dinner meals",
+        "expiry_date": "2025-08-15",
+        "condition": "Selected partners only",
+        "cupon_type": "BOGO"
+      },
+      {
+        "coupon_code": "FREEDRINK",
+        "description": "Free drink with every combo meal",
+        "expiry_date": "2025-09-01",
+        "condition": "Applicable on combos",
+        "cupon_type": "Freebie"
+      },
+      {
+        "coupon_code": "APP20",
+        "description": "Extra 20% off via mobile app",
+        "expiry_date": "2025-10-01",
+        "condition": "App users only",
+        "cupon_type": "Percentage"
       }
     ]
   },
@@ -67,6 +123,41 @@
         "expiry_date": "2025-06-30",
         "condition": "Order over 1000 BDT",
         "cupon_type": "Flat"
+      },
+      {
+        "coupon_code": "TECH20",
+        "description": "20% off on tech gadgets",
+        "expiry_date": "2025-07-20",
+        "condition": "Selected gadgets",
+        "cupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "SMARTBUY",
+        "description": "Buy 2 get 1 free on smartwatches",
+        "expiry_date": "2025-08-10",
+        "condition": "Only smartwatches",
+        "cupon_type": "BOGO"
+      },
+      {
+        "coupon_code": "JUNEFLAT50",
+        "description": "Flat 50 BDT off on all orders",
+        "expiry_date": "2025-06-30",
+        "condition": "No condition",
+        "cupon_type": "Flat"
+      },
+      {
+        "coupon_code": "FREEDEL",
+        "description": "Free delivery over 500 BDT",
+        "expiry_date": "2025-07-01",
+        "condition": "500 BDT minimum",
+        "cupon_type": "Shipping"
+      },
+      {
+        "coupon_code": "MOBILE5",
+        "description": "5% off on all smartphones",
+        "expiry_date": "2025-09-01",
+        "condition": "Applicable to smartphones only",
+        "cupon_type": "Percentage"
       }
     ]
   },
@@ -93,6 +184,34 @@
         "expiry_date": "2025-05-20",
         "condition": "Applies to prepaid purchases only",
         "cupon_type": "Shipping"
+      },
+      {
+        "coupon_code": "MACBOOK5",
+        "description": "5% off on all MacBooks",
+        "expiry_date": "2025-10-01",
+        "condition": "Only for MacBook models",
+        "cupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "BUYCASE",
+        "description": "Buy any phone, get case free",
+        "expiry_date": "2025-06-15",
+        "condition": "Limited stock",
+        "cupon_type": "Freebie"
+      },
+      {
+        "coupon_code": "CABLE20",
+        "description": "20% off on charging cables",
+        "expiry_date": "2025-07-01",
+        "condition": "Applies to all cable types",
+        "cupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "HEADPHONEFLAT",
+        "description": "Flat 100 BDT off on headphones",
+        "expiry_date": "2025-08-30",
+        "condition": "Minimum order 800 BDT",
+        "cupon_type": "Flat"
       }
     ]
   },
@@ -111,6 +230,41 @@
         "description": "25% off on fashion items",
         "expiry_date": "2025-07-01",
         "condition": "Minimum purchase of 1200 BDT",
+        "cupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "FURNI10",
+        "description": "10% off on furniture",
+        "expiry_date": "2025-09-15",
+        "condition": "All wooden items",
+        "cupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "OTHLIFESTYLE",
+        "description": "Flat 75 BDT off on lifestyle items",
+        "expiry_date": "2025-06-10",
+        "condition": "Minimum purchase 800 BDT",
+        "cupon_type": "Flat"
+      },
+      {
+        "coupon_code": "OTHOBUY2",
+        "description": "Buy 2 get 1 free",
+        "expiry_date": "2025-10-10",
+        "condition": "Selected categories only",
+        "cupon_type": "BOGO"
+      },
+      {
+        "coupon_code": "OTHOFREEDEL",
+        "description": "Free delivery over 1000 BDT",
+        "expiry_date": "2025-06-30",
+        "condition": "Applicable to all products",
+        "cupon_type": "Shipping"
+      },
+      {
+        "coupon_code": "APP15OTH",
+        "description": "15% off using the Othoba app",
+        "expiry_date": "2025-08-05",
+        "condition": "App orders only",
         "cupon_type": "Percentage"
       }
     ]
@@ -138,6 +292,34 @@
         "expiry_date": "2025-05-25",
         "condition": "Applies to fresh vegetables and meat",
         "cupon_type": "Shipping"
+      },
+      {
+        "coupon_code": "DAILYDEAL",
+        "description": "Flat 20 BDT off daily essentials",
+        "expiry_date": "2025-06-15",
+        "condition": "Selected items",
+        "cupon_type": "Flat"
+      },
+      {
+        "coupon_code": "CHALBUY3",
+        "description": "Buy 3 get 1 free on rice",
+        "expiry_date": "2025-07-01",
+        "condition": "Rice category only",
+        "cupon_type": "BOGO"
+      },
+      {
+        "coupon_code": "VEG10",
+        "description": "10% off on vegetables",
+        "expiry_date": "2025-07-10",
+        "condition": "Fresh category only",
+        "cupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "APP5CHAL",
+        "description": "5% app-exclusive discount",
+        "expiry_date": "2025-08-20",
+        "condition": "Only on Chaldal app",
+        "cupon_type": "Percentage"
       }
     ]
   }
