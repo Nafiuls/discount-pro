@@ -11,9 +11,9 @@ const TopBrands = () => {
       .then((data) => setData(data));
   }, []);
   return (
-    <div className="mt-10">
+    <div className=" py-10 bg-gray-100">
       <Header heading={"top brands"} />
-      <div className="mt-10">
+      <div>
         <Marquee pauseOnHover speed={100}>
           {data.map((item) => (
             <Link to={`/brands/${item._id}`}>
@@ -22,7 +22,6 @@ const TopBrands = () => {
                   className="w-[300px] h-[200px]"
                   src={item.brand_logo}
                   alt=""
-                  srcset=""
                 />
               </div>
             </Link>
