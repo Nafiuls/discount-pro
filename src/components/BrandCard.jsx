@@ -2,7 +2,6 @@ import React from "react";
 
 const BrandCard = ({ item }) => {
   const { brand_logo, brand_name, coupons, category } = item;
-  console.log(item);
 
   return (
     <div>
