@@ -31,7 +31,7 @@ const RegisterPage = () => {
     }
     setError("");
     handleRegister(email, password)
-      .then((result) => {
+      .then(() => {
         toast.success("Register successfull");
         manageProfile(name, image);
         navigate("/");

@@ -1,10 +1,11 @@
 import React from "react";
 import { FaStar } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import "animate.css";
 const BrandCard2 = ({ item }) => {
   const { brand_logo, brand_name, rating, description, _id, isSaleOn } = item;
   return (
-    <div className="lg:w-xl shadow-md p-5 flex items-center gap-6">
+    <div className="lg:w-xl  shadow-md p-5 flex items-center gap-6">
       <div className="border border-gray-400 p-2 rounded-md">
         <img
           className="rounded-md size-[150px] object-center"
@@ -25,7 +26,7 @@ const BrandCard2 = ({ item }) => {
             View Coupons
           </button>
         </Link>
-        <p className="text-3xl font-semibold mt-3 text-red-500">
+        <p className="text-3xl animate__animated animate__infinite text-center animate__tada  font-semibold mt-3 text-red-500">
           {isSaleOn ? "sale is on" : ""}
         </p>
       </div>

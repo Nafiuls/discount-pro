@@ -3,13 +3,14 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { GiArchiveRegister } from "react-icons/gi";
 import { MdEmail } from "react-icons/md";
 import { RiLockPasswordFill } from "react-icons/ri";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import UseAuth from "../utils/UseAuth";
 import toast from "react-hot-toast";
 
 const Login = () => {
   const [showPass, setShowPass] = useState(false);
   const { handleSignIn, handleGoogle } = UseAuth();
+  const location = useLocation();
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
@@ -18,20 +19,20 @@ const Login = () => {
     const email = form.email.value;
     const password = form.password.value;
     handleSignIn(email, password)
-      .then((result) => {
+      .then(() => {
         toast.success("Login successfull");
-        navigate("/");
+        navigate(location.state?.from || "/");
       })
       .catch((error) => {
-        console.log(error.message);
         toast.error(error.message);
       });
   };
   //   handle google login
   const google = () => {
     handleGoogle()
-      .then((result) => {
+      .then(() => {
         toast.success("Login successfull");
+        navigate(location.state?.from || "/");
       })
       .catch((error) => {
         toast.error(error.message);

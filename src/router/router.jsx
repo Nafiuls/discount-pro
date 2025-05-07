@@ -9,6 +9,7 @@ import Details from "../pages/Details";
 import Login from "../pages/Login";
 import Reset from "../pages/Reset";
 import UpdateUser from "../pages/UpdateUser";
+import PrivateRoute from "../components/PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -27,7 +28,12 @@ const router = createBrowserRouter([
       },
       {
         path: "/myProfile",
-        element: <MyProfile />,
+        element: (
+          <PrivateRoute>
+            {" "}
+            <MyProfile />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/aboutDev",
@@ -51,7 +57,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/brands/:id",
-        element: <Details />,
+        element: (
+          <PrivateRoute>
+            <Details />
+          </PrivateRoute>
+        ),
         loader: async ({ params }) => {
           const res = await fetch("/data.json");
           const data = await res.json();

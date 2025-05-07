@@ -5,7 +5,7 @@ const BrandCard = ({ item }) => {
 
   return (
     <div>
-      <div className="bg-white shadow-xl gap-4 flex flex-col items-center justify-center p-6">
+      <div className="bg-white w-full shadow-xl gap-4 flex flex-col items-center justify-center p-6">
         <img
           className="h-[150px] rounded-sm w-[200px]  object-center"
           src={brand_logo}

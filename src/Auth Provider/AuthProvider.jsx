@@ -14,6 +14,7 @@ import toast from "react-hot-toast";
 export const authContext = createContext();
 const AuthProvider = ({ route }) => {
   const [user, setUser] = useState(null);
+  const [loading, setloading] = useState(true);
   //   google provider
   const googleProvider = new GoogleAuthProvider();
   //   register a user
@@ -43,7 +44,7 @@ const AuthProvider = ({ route }) => {
         }));
         toast.success("Profile Updated");
       })
-      .catch((err) => {
+      .catch(() => {
         toast.error("Something went wrong");
       });
   };
@@ -60,9 +61,13 @@ const AuthProvider = ({ route }) => {
   //   observer
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      console.log(currentUser);
-      setUser(currentUser);
-
+      if (currentUser) {
+        console.log(currentUser);
+        setUser(currentUser);
+      } else {
+        setUser(null);
+      }
+      setloading(false);
       return () => {
         unsubscribe();
       };
@@ -77,6 +82,7 @@ const AuthProvider = ({ route }) => {
     handleLogOut,
     manageProfile,
     reset,
+    loading,
   };
   return <authContext.Provider value={data}>{route}</authContext.Provider>;
 };

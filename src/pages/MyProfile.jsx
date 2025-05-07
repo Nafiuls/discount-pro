@@ -1,15 +1,16 @@
 import React from "react";
 import UseAuth from "../utils/UseAuth";
 import { Link } from "react-router-dom";
+import "animate.css";
 
 const MyProfile = () => {
   const { user } = UseAuth();
   return (
     <div className="min-h-screen bg-orange-500 w-full flex flex-col items-center ">
-      <h1 className="text-center my-10 text-white font-bold text-3xl capitalize">
+      <h1 className="text-center animate__animated animate__backInLeft  my-10 text-white font-bold text-3xl capitalize">
         My Profile
       </h1>
-      <div className="bg-white gap-3 flex flex-col items-center rounded-md p-5 mx-auto lg:w-sm text-center">
+      <div className="animate__animated animate__backInRight bg-white gap-3 flex flex-col items-center rounded-md p-5 mx-auto lg:w-sm text-center">
         <h1 className="text-center text-orange-500 font-bold text-3xl capitalize">
           welcome back,
           <br /> {user?.displayName} !
