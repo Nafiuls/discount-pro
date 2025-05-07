@@ -8,6 +8,7 @@ import RegisterPage from "../pages/RegisterPage";
 import Details from "../pages/Details";
 import Login from "../pages/Login";
 import Reset from "../pages/Reset";
+import UpdateUser from "../pages/UpdateUser";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "/reset",
         element: <Reset />,
+      },
+      {
+        path: "/update",
+        element: <UpdateUser />,
       },
       {
         path: "/brands/:id",

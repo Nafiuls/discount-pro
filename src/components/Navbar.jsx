@@ -65,7 +65,7 @@ const Navbar = () => {
         <div className="navbar-end">
           {user ? (
             <div className="flex items-center gap-3">
-              <div className="avatar">
+              <div title={user?.displayName} className="avatar">
                 <div className="w-12 rounded-full">
                   <img src={user?.photoURL} />
                 </div>
@@ -79,9 +79,9 @@ const Navbar = () => {
               </button>
             </div>
           ) : (
-            <Link to={"/register"}>
+            <Link to={"/login"}>
               <button className="bg-white px-5 py-2 rounded-sm hover:bg-transparent hover:border hover:border-white hover:text-white cursor-pointer transition-all text-black">
-                Register
+                login
               </button>
             </Link>
           )}

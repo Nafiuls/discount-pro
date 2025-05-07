@@ -5,7 +5,7 @@ import UseAuth from "../utils/UseAuth";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 const Reset = () => {
-  const { reset } = UseAuth();
+  const { reset, user } = UseAuth();
   const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -13,7 +13,7 @@ const Reset = () => {
     reset(email)
       .then((result) => {
         toast.success("Check your email !");
-        navigate("/login");
+        window.open("https://mail.google.com", "_blank");
       })
       .catch((error) => {
         toast.error(error.message);
@@ -35,6 +35,7 @@ const Reset = () => {
           <input
             type="email"
             name="email"
+            value={user?.email}
             placeholder="Your email"
             className="outline-none p-2 w-full "
           />

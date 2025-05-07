@@ -10,6 +10,7 @@ import {
   onAuthStateChanged,
 } from "firebase/auth";
 import auth from "../firebase/firebase.config";
+import toast from "react-hot-toast";
 export const authContext = createContext();
 const AuthProvider = ({ route }) => {
   const [user, setUser] = useState(null);
@@ -33,7 +34,18 @@ const AuthProvider = ({ route }) => {
     return updateProfile(auth.currentUser, {
       displayName: name,
       photoURL: image,
-    });
+    })
+      .then(() => {
+        setUser((user) => ({
+          ...user,
+          displayName: name,
+          photoURL: image,
+        }));
+        toast.success("Profile Updated");
+      })
+      .catch((err) => {
+        toast.error("Something went wrong");
+      });
   };
   // reset password
   const reset = (email) => {

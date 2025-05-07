@@ -96,9 +96,7 @@ const Login = () => {
           </button>
         </div>
         <Link to={"/reset"}>
-          <p className="text-center font-medium text-orange-500 hover:underline">
-            Forgot Password?
-          </p>
+          <p>Forgot Password?</p>
         </Link>
         <p className="font-medium text-orange-500">
           Don't have an account?{" "}
