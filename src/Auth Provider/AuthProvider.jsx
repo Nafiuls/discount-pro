@@ -3,6 +3,8 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signInWithPopup,
+  updateProfile,
+  sendPasswordResetEmail,
   signOut,
   GoogleAuthProvider,
   onAuthStateChanged,
@@ -19,11 +21,23 @@ const AuthProvider = ({ route }) => {
   };
   //   sign in a user
   const handleSignIn = (email, password) => {
-    return signInWithEmailAndPassword(email, password);
+    return signInWithEmailAndPassword(auth, email, password);
   };
   //   google sign in
   const handleGoogle = () => {
     return signInWithPopup(auth, googleProvider);
+  };
+
+  // update profile
+  const manageProfile = (name, image) => {
+    return updateProfile(auth.currentUser, {
+      displayName: name,
+      photoURL: image,
+    });
+  };
+  // reset password
+  const reset = (email) => {
+    return sendPasswordResetEmail(auth, email);
   };
 
   // sign out a user
@@ -35,6 +49,7 @@ const AuthProvider = ({ route }) => {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       console.log(currentUser);
+      setUser(currentUser);
 
       return () => {
         unsubscribe();
@@ -48,6 +63,8 @@ const AuthProvider = ({ route }) => {
     handleSignIn,
     handleGoogle,
     handleLogOut,
+    manageProfile,
+    reset,
   };
   return <authContext.Provider value={data}>{route}</authContext.Provider>;
 };

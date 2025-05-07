@@ -5,12 +5,12 @@ import { RiLockPasswordFill } from "react-icons/ri";
 import { GiArchiveRegister } from "react-icons/gi";
 import UseAuth from "../utils/UseAuth";
 import toast from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const RegisterPage = () => {
   const [showPass, setShowPass] = useState(false);
   const [error, setError] = useState("");
-  const { handleRegister } = UseAuth();
+  const { handleRegister, manageProfile } = UseAuth();
   const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -32,11 +32,11 @@ const RegisterPage = () => {
     setError("");
     handleRegister(email, password)
       .then((result) => {
-        console.log(result.user);
         toast.success("Register successfull");
+        manageProfile(name, image);
         navigate("/");
       })
-      .catch((error) => console.log(error.message));
+      .catch((error) => toast.error(error.message));
   };
   return (
     <div className="min-h-screen p-4 flex items-center justify-center w-full bg-orange-500">
@@ -94,6 +94,12 @@ const RegisterPage = () => {
         <button className="bg-orange-500 cursor-pointer hover:bg-orange-600 transition-all text-white font-medium rounded-md py-2  w-full text-center">
           Register
         </button>
+        <p className="font-medium text-orange-500">
+          Already have an account?{" "}
+          <Link className="text-blue-500 hover:underline" to={"/login"}>
+            Login
+          </Link>
+        </p>
       </form>
     </div>
   );

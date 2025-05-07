@@ -6,6 +6,8 @@ import MyProfile from "../pages/MyProfile";
 import AboutDev from "../pages/AboutDev";
 import RegisterPage from "../pages/RegisterPage";
 import Details from "../pages/Details";
+import Login from "../pages/Login";
+import Reset from "../pages/Reset";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +35,14 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <RegisterPage />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/reset",
+        element: <Reset />,
       },
       {
         path: "/brands/:id",

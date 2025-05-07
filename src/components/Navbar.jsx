@@ -1,7 +1,9 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./navbar.css";
+import UseAuth from "../utils/UseAuth";
 const Navbar = () => {
+  const { user, handleLogOut } = UseAuth();
   const links = [
     { name: "home", path: "/" },
     { name: "brands", path: "brands" },
@@ -61,11 +63,28 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link to={"/register"}>
-            <button className="bg-white px-5 py-2 rounded-sm hover:bg-transparent hover:border hover:border-white hover:text-white cursor-pointer transition-all text-black">
-              Register
-            </button>
-          </Link>
+          {user ? (
+            <div className="flex items-center gap-3">
+              <div className="avatar">
+                <div className="w-12 rounded-full">
+                  <img src={user?.photoURL} />
+                </div>
+              </div>
+
+              <button
+                onClick={() => handleLogOut()}
+                className="bg-white px-5 py-2 rounded-sm cursor-pointer text-black"
+              >
+                logout
+              </button>
+            </div>
+          ) : (
+            <Link to={"/register"}>
+              <button className="bg-white px-5 py-2 rounded-sm hover:bg-transparent hover:border hover:border-white hover:text-white cursor-pointer transition-all text-black">
+                Register
+              </button>
+            </Link>
+          )}
         </div>
       </div>
     </div>
