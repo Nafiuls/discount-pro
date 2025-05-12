@@ -31,7 +31,7 @@ const AuthProvider = ({ route }) => {
   };
 
   // update profile
-  const manageProfile = (name, image) => {
+  const manageProfile = async (name, image) => {
     return updateProfile(auth.currentUser, {
       displayName: name,
       photoURL: image,
